@@ -1,0 +1,30 @@
+/* frontend/src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styling for a cleaner look */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Optional: Basic fade-in animation for dropdowns/modals */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out forwards;
+}
+
+/* Inter font application */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Highlight.js theme import (atom-one-dark is already imported in Project.jsx, but can be global) */
+/* @import 'highlight.js/styles/atom-one-dark.css'; */
